@@ -7,7 +7,7 @@ namespace EntityVet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Animals!");
         }
     }
     class VetBD : DbContext
