@@ -8,11 +8,10 @@ namespace EntityVet
 {
     class Pet
     {
-        public int IdPet { get; set; }
+        public int PetID { get; set; } //chave primaria da class PET
+        public int CustomerID { get; set; } // chave estrangeira da PET para Customer
         public string NamePet { get; set; }
         public string TypeOfPet { get; set; }
-        public int IdCustumer { get; set; }
-        public int MyProperty { get; set; }
-        public DateTime BornDateAnimal { get; set; }
+        public string WeightPet { get; set; }
     }
 }
