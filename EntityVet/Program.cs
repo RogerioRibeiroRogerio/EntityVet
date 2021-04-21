@@ -37,7 +37,7 @@ namespace EntityVet
                 // VetBD bd = new VetBD(); nao é necessarioo pois foi instanciado em cima linha 25
                 bd.Pets.Add(o2);
                 bd.SaveChanges();
-                Console.WriteLine("Do you have more Pets?");
+                Console.WriteLine("Do you have more Pets? Y - yes N - no ");
                 string awanser = Console.ReadLine();
                 option = awanser;
             }
