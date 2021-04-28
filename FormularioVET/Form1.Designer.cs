@@ -41,6 +41,7 @@ namespace FormularioVET
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -50,6 +51,7 @@ namespace FormularioVET
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.Form1_Load);
             // 
             // button3
             // 
@@ -143,11 +145,22 @@ namespace FormularioVET
             this.textBox4.Size = new System.Drawing.Size(125, 27);
             this.textBox4.TabIndex = 21;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(591, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 29);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Put Category";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -182,6 +195,7 @@ namespace FormularioVET
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button1;
     }
 }
 

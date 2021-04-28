@@ -21,9 +21,19 @@ namespace FormularioVET
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            BDveteriano bd;
+            using (bd = new BDveteriano())
+            {
+                var consultaEquivalente = from r in bd.TypeOfVets select r;
+                comboBox1.Items.Add(consultaEquivalente);
+            }
+
+           // foreach (var item in comboBox1.Items.Add(consultaEquivalente))
+            //{
+                
+            //}
 
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             string yourName = textBox1.Text;
@@ -38,7 +48,7 @@ namespace FormularioVET
             string yourNumber = textBox4.Text;
             textBox4.Text = "";
 
-            Customer o1 = new Customer() { NameCustumer = yourName, EmailCustumer = yourEmail, AdressCustumer = yourAdress, Telefone = yourNumber }; // Tabela do Custumers 
+            //Customer o1 = new Customer() { NameCustumer = yourName, EmailCustumer = yourEmail, AdressCustumer = yourAdress, Telefone = yourNumber }; // Tabela do Custumers 
 
             //bd.Customers.Add(o1);
             //bd.SaveChanges();
@@ -64,6 +74,12 @@ namespace FormularioVET
                                           //where utente.Nome == "Ana"
                                           //select utente;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 Form2putcat = new Form2();
+            Form2putcat.ShowDialog();
         }
         //public class VetBD : DbContext
         //{
