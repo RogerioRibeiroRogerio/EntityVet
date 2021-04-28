@@ -13,9 +13,9 @@ namespace FormularioVET
         public DbSet<Customer> Customers { get; set; }
         public DbSet<TypeOfVet> TypeOfVets { get; set; }
 
-        protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDveteriano;Integrated Security=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=EntityVet;Trusted_Connection=True;");
         }
     }
 }

@@ -49,9 +49,9 @@ namespace FormularioVET
                 //Teste: adicionar um Utente:
                 Customer ObjCust = new Customer() { NameCustumer = yourName, EmailCustumer = yourEmail, AdressCustumer = yourAdress, Telefone = yourNumber }; 
                 bd.Customers.Add(ObjCust);
-                //bd.SaveChanges();
+                bd.SaveChanges();
                 //Preferencialemente usar os métodos ASYNC:
-                bd.SaveChangesAsync();
+                //bd.SaveChangesAsync();
                // Console.WriteLine("FIM DO INSERT DE UM UTENTE");
 
                 //Mesmo com LAZZY LOADING é possível pedir à EF para carregar as propriedades de navegação declaradas com "virtual" (isto é o explicit loading).

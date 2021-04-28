@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FormularioVET
 {
-    class TypeOfVet
+    public class TypeOfVet
     {
-        public int VetID { get; set; }
-        public string typeofVet { get; set; }
+        public int TypeOfVetID { get; set; }
+        public string typeofAnimal { get; set; }
     }
 }

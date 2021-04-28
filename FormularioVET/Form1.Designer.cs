@@ -46,7 +46,7 @@ namespace FormularioVET
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(408, 50);
+            this.comboBox1.Location = new System.Drawing.Point(462, 118);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
             this.comboBox1.TabIndex = 1;
@@ -94,7 +94,6 @@ namespace FormularioVET
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 14;
-           // this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -136,7 +135,6 @@ namespace FormularioVET
             this.label6.Size = new System.Drawing.Size(143, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "Your mobil number?";
-           // this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox4
             // 
