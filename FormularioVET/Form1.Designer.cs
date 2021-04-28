@@ -46,7 +46,7 @@ namespace FormularioVET
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(462, 118);
+            this.comboBox1.Location = new System.Drawing.Point(341, 214);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 28);
             this.comboBox1.TabIndex = 1;
