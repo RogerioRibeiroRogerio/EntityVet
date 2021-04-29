@@ -24,8 +24,12 @@ namespace FormularioVET
             BDveteriano bd;
             using (bd = new BDveteriano())
             {
-                var consultaEquivalente = from r in bd.TypeOfVets select r;
-                comboBox1.Items.Add(consultaEquivalente);
+                // var consultaEquivalente = from r in bd.TypeOfVets select r;
+                // comboBox1.Items.Add(consultaEquivalente);
+                comboBox1.DataSource = bd.TypeOfVets.ToList();
+                comboBox1.DisplayMember = "typeofAnimal";
+                comboBox1.ValueMember = "TypeOfVetID";
+                comboBox1.Invalidate();
             }
 
            // foreach (var item in comboBox1.Items.Add(consultaEquivalente))
